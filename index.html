@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCS-3</title>
+    <!-- <link rel="stylesheet" href="font/Koulen-Regular.ttf"> -->
+    <link rel="stylesheet" href="font/Koulen-Regular.ttf">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            @font-face {
+                font-family: ;
+                src: url(fonts/Koulen-Regular);
+            }
+        }
+        body div center{
+            background-image: url(img/div1bg.webp);
+        }
+        div.nav{
+            width: 100%;
+            height: 100px;
+          
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            position: sticky;
+            top: 0px;
+        }
+        div#logo{
+            display: inline-block;
+            width: 5%;
+           
+            margin: 17px 0px 0px 30px;
+    height: 60px;
+
+        }
+      
+        div#logo h1{
+            margin-top: 5px;
+            width: auto;
+           
+        }
+        div#logo span {
+            font-size: xxx-large;
+            letter-spacing: 5px;
+            
+        }
+        .nav ul{
+           
+            float:right;
+            background-position: center;
+            margin: 30px 55px 0px 50px;
+            
+            font-size: 1.5em;
+            font-weight: 500;
+        
+        }
+       
+        .nav ul li{
+            display: inline-block ;
+            background-color: transparent;
+            margin-right: 14px;
+            
+            /* box-shadow: 5px 6px 7px black; */
+        }
+        .nav ul li a{
+            display: block ;
+            padding: 10px 9px;
+            color: black;
+            text-decoration: none;
+            text-transform: capitalize;
+          
+           
+        }
+        .nav ul li a:hover{
+           font-weight: 600;
+           border-bottom: 2px solid black;
+           animation-delay: 2px;
+         
+          
+        }
+       div.icons{
+        width: 26%;
+        float: right;
+        margin: 18px 50px 0px 0px;
+     
+        height: 60px;
+        display: inline-block;
+       }
+       div.icons img{
+        width: 28%;
+    height: 54%;
+    margin-top: 14px;
+      
+        display: inline-block;
+       }
+       div.center{
+        width:100% ;
+        height: 100%;
+        
+       }
+       div.center img{
+        box-sizing: border-box;
+        width: 100%;
+        height:900px;
+        display: inline-block;
+      
+       }
+     div#items{
+        width: 100%;
+        height: 150px;
+        background-color: #012939;
+        padding:26px 0px 0px 20px;
+        text-align: center;
+        box-sizing: border-box;
+   
+     }
+     div.niddle{
+        width: 30%;
+        height: 100px;
+      
+        display: inline-block;
+        margin-left:20px ;
+     }
+     div.tape{
+        width: 30%;
+        height: 100px;
+      
+        display: inline-block;
+        margin-left:20px ;
+     }
+     div.shirt{
+        width: 30%;
+        height: 100px;
+        /* background-color: yellow; */
+        display: inline-block;
+        margin-left:20px
+     }
+     div.niddle img{
+        width: 55px;
+        height: 50px;
+        margin-top: 10px;
+
+     }
+     div.tape img{
+        width: 55px;
+        height: 50px;
+        margin-top: 10px;
+
+    }
+    div.shirt img{
+        width: 55px;
+        height: 50px;
+        margin-top: 10px;
+
+    }
+    div.shirt h2{
+       
+        margin-top: 10px;
+        font-size: xx-large;
+        font-weight: 600;
+        color: white;
+    }
+    div.tape h2{
+       
+       margin-top: 10px;
+       font-size: xx-large;
+       font-weight: 600;
+       color: white;
+   }
+   div.niddle h2{
+       
+       margin-top: 10px;
+       font-size: xx-large;
+       font-weight: 600;
+       color: white;
+
+   }
+   h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 60px 0px 20px 0px;
+    font-size: xx-large;
+    font-weight: 600;
+    color: black;
+   }
+   p{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px 0px 20px 0px;
+   }
+   h4{
+    text-align: center;
+    text-transform: uppercase;
+  margin: 73px 0px -15px 0px;
+    font-size: xxx-large;
+    font-weight: 600;
+   }
+   div.tops{
+    width: 100%;
+    height: 580px;
+    background-color: rgb(255, 255, 255);
+    padding: 91px 27px 0px 88px;
+   }
+   div.shirts{
+    width: 280px;
+    height: 450px;
+    /* background-color: red; */
+    display: inline-block;
+    margin-right: 17px;
+
+   }
+   div.tees{
+    width: 280px;
+    height: 450px;
+    /* background-color: red; */
+    display: inline-block;
+    margin-right: 17px;
+
+   }
+   div.polo{
+    width: 280px;
+    height: 450px;
+    /* background-color: red; */
+    display: inline-block;
+    margin-right: 17px;
+
+   }
+   div.suit{
+    width: 280px;
+    height: 450px;
+    /* background-color: red; */
+    display: inline-block;
+    margin-right: 17px;
+
+   }
+   div.suit img{
+  
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    border-radius:20px;
+
+   }
+   div.polo img{
+  
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  border-radius:20px;
+
+ }
+ 
+ div.shirts img{
+  
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  border-radius:20px;
+
+ }
+ div.tees img{
+  
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  border-radius:20px;
+ 
+ }
+ div.tees h5{
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 0);
+ }
+ div.polo h5{
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 0);
+ }
+ div.shirts h5{
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 0);
+ }
+ div.suit h5{
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 0);
+ }
+ div.pants{
+    width: 280px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    padding: 91px 27px 0px 88px;
+    display: inline-block;
+   }
+   div.jeans{
+    width: 280px;
+    height: 450px;
+    /* background-color: red; */
+    display: inline-block;
+    margin-right: 17px;
+
+   }
+   div.pants img{
+  
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  border-radius:20px;
+
+ }
+ div.jeans img{
+  
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  border-radius:20px;
+ 
+ }
+ div.pants h5{
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 0);
+ }
+ div.jeans h5{
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 0);
+ }
+ div.end{
+    width: 100%;
+    height: 400px;
+    background-color: #012939;
+
+ }
+ div h2.line{
+    margin: 20px 20px 0px 20px;
+    padding: 40px 0px 5px 30px;
+    font-size: x-large;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+ }
+ div.box{
+    width: 630px;
+    height: 170px;
+    background-color: transparent;
+    display: inline-block;
+    color: white;
+    font-size: larger;
+    font-weight: 400;
+    margin: 30px 9px 2px 14px;
+    padding: 2px 4px 5px 9px;
+ }
+
+ button{
+    padding: 7px 73px 7px 73px;
+    background-color: rgb(255, 255, 255);
+    margin: 9px 4px 5px 200px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    border: 2px solid black;
+    font-size: larger;
+    font-weight: 400;
+ }
+ button:hover{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+
+ }
+h1.slogan{
+    text-align: center;
+    font-weight: 800;
+    font-size: 80px;
+    color: white;
+    margin-top: 40px;
+    padding-bottom: 9px;
+    back
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div id="logo">
+           <h1 class="logo"><span>MH</span>TAILOR</h1>
+        
+        </div>
+        <div class="icons">
+<a href="#"><img src="" alt=""></a>
+<a href="#"><img src="img/cart.svg" alt="login"></a>
+        </div>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">feedback</a></li>
+            <li><a href="#">contact us</a></li>
+            
+        </ul>
+        
+
+    </div>
+    
+    <div class="center">
+       <img src="img/div1bg.webp" alt="bg">
+    </div>
+    <div id="items">
+<div class="niddle"><img src="img/niddle.webp" alt=""><h2>Custom
+    Designed Clothes</h2></div>
+<div class="tape"><img src="img/tape.webp" alt=""><h2>Custom Measurements</h2></div>
+<div class="shirt"><img src="img/shirt.webp" alt=""><h2>Perfect Fit Guarantee</h2></div>
+    </div>
+    <h3>SHOP BY CATEGORY</h3>
+    <p>Life better when your clothes fit.</p>
+    <h4>Tops</h4>
+    <div class="tops">
+        <div class="shirts"><img src="img/shirts.webp" alt=""><h5>SHIRTS</h5></div>
+        <div class="tees"><img src="img/tees.webp" alt=""><h5>TEES</h5></div>
+        <div class="polo"><img src="img/polos.webp" alt=""><h5>POLOS</h5></div>
+        <div class="suit"><img src="img/suits.webp" alt=""> <h5>SUITS</h5></div>
+    </div>
+    <br>
+    <h4>bottoms
+    </h4>
+    <div class="tops">
+        <div class="pants"><img src="img/pants.webp" alt=""><h5>PANTS</h5></div>
+        <div class="jeans"><img src="img/jeans.webp" alt=""><h5>JEANS</h5></div>
+        <div class="polo"><img src="img/polos.webp" alt=""><h5>POLOS</h5></div>
+        <!-- <div class="suit"><img src="img/suits.webp" alt=""> <h5>SUITS</h5></div> -->
+    </div>
+    <div class="end">
+        <h2 class="line">Join the revolution - and our newsletter</h2>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur officia provident quas error ad, quo tenetur excepturi aut ea, natus cumque fugit cum eum exercitationem libero iste aliquam at?
+                
+            </p>
+        </div>
+        <button>sign up</button>
+        <h1 class="slogan">Where bad fits come to die.</h1>
+        
+    </div>
+</body>
+
+</html>
